@@ -1,0 +1,69 @@
+/* sortable ------------------------------------------------------------------------------------- */
+.container {
+    overflow: hidden;
+    margin-top: 0.5em;
+}
+.sortable {
+    /*width: 310px;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sortable.grid {
+    overflow: hidden;
+}
+.sortable li {
+    list-style: none;
+    border: 1px solid #000000;
+    background: #ffffff;
+    color: #000000;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+}
+.sortable.grid li {
+    line-height: 80px;
+    float: left;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.handle {
+    cursor: move;
+}
+.sortable.connected {
+    width: 200px;
+    min-height: 100px;
+    float: left;
+}
+li.disabled {
+    opacity: 0.5;
+}
+li.highlight {
+    background: #FEE25F;
+}
+li.sortable-placeholder {
+    border: 1px dashed #CCC;
+    background: none;
+    height: 1em;
+}
+
+.controls {
+    float: right;
+}
+.controls img {
+    background: #666;
+}
+.controls img:hover {
+    background: #000;
+    cursor: pointer;
+}
+
+li[rel="1"] { margin-left: 1em; }
+li[rel="2"] { margin-left: 2em; }
+li[rel="3"] { margin-left: 3em; }
+li[rel="4"] { margin-left: 4em; }
+li[rel="5"] { margin-left: 5em; }
+li[rel="6"] { margin-left: 6em; }
+li[rel="7"] { margin-left: 7em; }
